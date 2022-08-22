@@ -61,7 +61,7 @@ body {
   letter-spacing: var(--main-spacing);
   color: var(--primary-color);
 }
-.logo #studio {
+.logo .studio {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -200,7 +200,10 @@ body {
   line-height: 1.7;
   letter-spacing: var(--main-spacing);
   color: var(--p-text-color);
+  height: 98px;
+  width: 270px;
 }
+
 .team {
   display: flex;
   flex-direction: column;
