@@ -120,14 +120,13 @@ body {
   align-items: center;
   gap: 93px;
 }
-.opacity {
-  background: rgba(255, 0, 0, 0.15);
-}
+
 .hero {
   background-image: url(../images/scope/Img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: var(--secondary-color);
 }
 .section-1 {
   display: flex;
