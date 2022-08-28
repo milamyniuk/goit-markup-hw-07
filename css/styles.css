@@ -120,10 +120,27 @@ body {
   align-items: center;
   gap: 93px;
 }
-
+/* icons header*/
+.icon-envelope {
+  fill: #757575;
+}
+.icon-envelope:hover {
+  cursor: pointer;
+  fill: var(--primary-color);
+}
+.icon-smartphone {
+  fill: #757575;
+}
+.icon-smartphone:hover {
+  cursor: pointer;
+  fill: var(--primary-color);
+}
 .hero {
-  background-image: url(../images/scope/Img.png);
-  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/scope/Img.png);
   background-size: cover;
   background-position: center;
   background-color: var(--secondary-color);
@@ -148,6 +165,7 @@ body {
   color: var(--main-bg-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -164,7 +182,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 1170px;
-  height: 101px;
+
   align-items: center;
   justify-content: center;
   margin: 94px auto;
@@ -202,6 +220,20 @@ body {
   height: 98px;
   width: 270px;
 }
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  gap: 30px;
+
+  background-color: var(--main-second-bg-color);
+}
+/* TEAM */
 
 .team {
   display: flex;
@@ -209,15 +241,16 @@ body {
   background-color: var(--main-second-bg-color);
   padding: 30px;
   align-items: center;
+  padding-bottom: 90px;
   margin-top: 94px;
 }
 .team-description {
   display: flex;
   flex-direction: column;
   background-color: var(--main-bg-color);
-  height: 368px;
   gap: 10px;
   align-items: center;
+  height: 428px;
 }
 .second-heading {
   font-weight: 700;
@@ -235,7 +268,35 @@ body {
   text-align: center;
   letter-spacing: var(--main-spacing);
   color: var(--main-text-color);
-  margin-top: 30px;
+  padding-top: 30px;
+}
+
+/* TEAM SOCIAL ICONS */
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--main-bg-color);
+}
+
+.social-list-link:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.social-list-icon {
+  fill: #afb1b8;
+}
+.social-list-link:hover .social-list-icon {
+  fill: #ffffff;
 }
 .position {
   font-weight: 400;
@@ -245,14 +306,58 @@ body {
   letter-spacing: var(--main-spacing);
   color: var(--p-text-color);
 }
-.footer {
+/* Regular clients */
+.regular-clients {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1170px;
+  margin: 94px 215px;
+}
+.extraSpace {
+  margin-top: 50px;
+}
+.clients-icons {
+  display: flex;
+  justify-content: center;
+  border: 10px;
+}
+.clients-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border-width: 1px;
+  border-style: ridge;
+}
+
+.social-list-icon:hover {
+  cursor: pointer;
+  fill: var(--primary-color);
+}
+
+.clients-icons-link:hover {
+  border: var(--primary-color);
+  cursor: pointer;
+  border-style: ridge;
+}
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: row;
   background-color: var(--secondary-color);
-  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
   padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
+  height: 252px;
+}
+.footer-container-left {
+  display: flex;
+  flex-direction: column;
 }
 .list-footer {
   margin-top: 20px;
@@ -281,6 +386,41 @@ body {
 .contact-details-footer:hover,
 .contact-details-footer:focus {
   color: var(--primary-color);
+}
+.footer-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 70px;
+  padding-top: 10px;
+}
+.footer-icons-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: var(--main-spacing);
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  margin-bottom: 20px;
+}
+.social-list-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.social-list-link-footer:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+.social-list-link-footer:hover .social-list-icon {
+  fill: var(--main-bg-color);
 }
 /* Портфоліо сторінка*/
 .section-projects {
