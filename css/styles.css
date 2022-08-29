@@ -32,10 +32,10 @@ img {
 }
 .list {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   list-style: none;
   gap: 30px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 a {
@@ -144,14 +144,21 @@ body {
   background-size: cover;
   background-position: center;
   background-color: var(--secondary-color);
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
 }
-.section-1 {
+/*HERO*/
+.container-hero {
   display: flex;
   flex-direction: column;
-  width: 1600px;
+  width: 1200px;
   height: 600px;
   align-items: center;
   justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-heading {
   width: 696px;
@@ -178,14 +185,19 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section-2 {
-  display: flex;
-  flex-direction: row;
-  width: 1170px;
-
+.section-services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  /* display: flex;
+  flex-direction: row; */
+  width: 1200px;
   align-items: center;
-  justify-content: center;
-  margin: 94px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* justify-content: center; */
+  margin: 0 auto;
 }
 
 .service-button {
@@ -217,8 +229,8 @@ body {
   line-height: 1.7;
   letter-spacing: var(--main-spacing);
   color: var(--p-text-color);
-  height: 98px;
-  width: 270px;
+  /* height: 98px;
+  width: 270px; */
 }
 .image-container {
   display: flex;
@@ -233,6 +245,9 @@ body {
 
   background-color: var(--main-second-bg-color);
 }
+.what-we-do {
+  padding-bottom: 94px;
+}
 /* TEAM */
 
 .team {
@@ -241,17 +256,10 @@ body {
   background-color: var(--main-second-bg-color);
   padding: 30px;
   align-items: center;
-  padding-bottom: 90px;
-  margin-top: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
-.team-description {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--main-bg-color);
-  gap: 10px;
-  align-items: center;
-  height: 428px;
-}
+
 .second-heading {
   font-weight: 700;
   font-size: 36px;
@@ -259,8 +267,18 @@ body {
   text-align: center;
   letter-spacing: var(--main-spacing);
   color: var(--main-text-color);
-  margin: 50px auto;
+  margin-bottom: 50px;
 }
+.team-description {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+  gap: 10px;
+  align-items: center;
+
+  border-radius: 0px 0px 4px 4px;
+}
+
 .names {
   font-weight: 500;
   font-size: 16px;
@@ -269,6 +287,7 @@ body {
   letter-spacing: var(--main-spacing);
   color: var(--main-text-color);
   padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 /* TEAM SOCIAL ICONS */
@@ -276,6 +295,10 @@ body {
   display: flex;
   justify-content: center;
   column-gap: 10px;
+  padding-bottom: 30px;
+}
+.extra-parameter {
+  gap: 30px;
 }
 .social-list-link {
   display: flex;
@@ -350,7 +373,7 @@ body {
   background-color: var(--secondary-color);
   align-content: flex-start;
   justify-content: flex-start;
-  padding-left: 215px;
+  /* padding-left: 215px; */
   padding-top: 60px;
   padding-bottom: 60px;
   height: 252px;
@@ -358,12 +381,17 @@ body {
 .footer-container-left {
   display: flex;
   flex-direction: column;
+  padding-left: 215px;
 }
 .list-footer {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   list-style: none;
+}
+
+.list-address-item:nth-child(n) {
+  margin-bottom: 9px;
 }
 .address {
   font-style: normal;
@@ -380,7 +408,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: var(--main-spacing);
-  color: var(--main-bg-color);
+  color: rgba(255, 255, 255, 0.6);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .contact-details-footer:hover,
@@ -423,6 +451,7 @@ body {
   fill: var(--main-bg-color);
 }
 /* Портфоліо сторінка*/
+
 .section-projects {
   display: flex;
   flex-direction: row;
@@ -430,7 +459,16 @@ body {
   justify-content: center;
   margin-top: 94px;
 }
-
+.list-buttons {
+  display: flex;
+  /* flex-direction: row; */
+  list-style: none;
+  gap: 8px;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 6px 22px;
+  margin-bottom: 34px;
+}
 .list-projects {
   list-style: none;
   display: flex;

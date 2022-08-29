@@ -65,17 +65,20 @@
         </li>
       </ul>
     </header>
-    <!--MAIN-->
+    <!----------------------HEADER ENDS ----------------------------------->
+                                                <!--MAIN-->
     <main>
+                                          <!--Section HERO-->
       <section class="hero">
-        <div class="section-1">
+        <div class="container-hero">
           <h1 class="main-heading">Ефективні рішення для вашого бізнесу</h1>
           <button class="service-button" type="button">Замовити послугу</button>
         </div>
       </section>
-      <section>
-        <h2 class="visually-hidden">Наши особенности</h2>
-        <div class="section-2">
+                                     <!--Service provision-->
+      <section class="section-services">
+        <div class="container">
+          <h2 class="visually-hidden">Наши особенности</h2>
           <div class="list-below-hero">
           <ul class="list">
             <li>
@@ -89,6 +92,7 @@
                 <use href="./images/sprite.svg#icon-antenna-1"></use>
               </svg>
              </div>
+                                  
               <h3 class="heads">увага до деталей</h3>
               <p class="heads-description">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -149,8 +153,12 @@
         </div>
         </div>
       </section>
-      <section>
-        <h2 class="second-heading">Чим ми займаємося</h2>
+ <!------------------------------------------Service provision----------------------------->
+                           <!-- what do we do-->
+      <div class="what-we-do">
+       
+        <div class="container">
+          <h2 class="second-heading">Чим ми займаємося</h2>
         <ul class="list">
           <li>
             <img
@@ -177,20 +185,23 @@
             />
           </li>
         </ul>
-      </section>
-      <!--TEAM-->
+        </div>
+      </div>
+      <!----------------Services provision and what do we do------------------->
+
+                                              <!--TEAM-->
       <section class="team">
+        <div class="container"> 
         <h2 class="second-heading">Наша команда</h2>
-        <ul class="social-list list">
+        <ul class="social-list list extra-parameter">
           <li>
-            <div class="team-description">
               <img
                 src="./images/team/Igor_Demianenko1.jpg"
                 alt="Игорь Демяненко член команды"
                 width="270"
                 height="260"
               />
-
+              <div class="team-description">
               <h3 class="names">Ігор Дем'яненко</h3>
               <p class="position" lang="en">Product Designer</p>
               <ul class="social-list list">
@@ -250,13 +261,14 @@
             </div>
           </li>
           <li>
-            <div class="team-description">
+            
               <img
                 src="./images/team/Olga_Repina2.jpg"
                 alt="Ольга Репина член команды"
                 width="270"
                 height="260"
               />
+              <div class="team-description">
               <h3 class="names">Ольга Рєпіна</h3>
               <p class="position" lang="en">Frontend Developer</p>
               <ul class="social-list list">
@@ -316,13 +328,14 @@
             </div>
           </li>
           <li>
-            <div class="team-description">
+            
               <img
                 src="./images/team/Nikolai_Tarasov3.jpg"
                 alt="Николай Тарасов член команды"
                 width="270"
                 height="260"
               />
+              <div class="team-description">
               <h3 class="names">Микола Тарасов</h3>
               <p class="position" lang="en">Marketing</p>
               <ul class="social-list list">
@@ -382,13 +395,13 @@
             </div>
           </li>
           <li>
-            <div class="team-description">
               <img
                 src="./images/team/Mikhail_Ermakov4.jpg"
                 alt="Михаил Ермаков член команды"
                 width="270"
                 height="260"
               />
+              <div class="team-description">
               <h3 class="names">Михайло Єрмаков</h3>
               <p class="position" lang="en">UI Designer</p>
               <ul class="social-list list">
@@ -448,7 +461,11 @@
             </div>
           </li>
         </ul>
+      </div>
       </section>
+      <!-----------------------------------TEAM ENDS------------------------------------->
+
+                                    <!--REGULAR CLIENTS-->
       <section class="regular-clients">
         <h2 class="second-heading extraSpace">Постійні клієнти</h2>
         <div class="regular-clients-icons">
@@ -535,7 +552,9 @@
           </ul>
         </div>
       </section>
+      <!----------------------------------------REGULAR CLIENTS ENDS---------------------------->
     </main>
+    <!-------------------------------------------------MAIN ENDS-------------------------------->
     <!--FOOTER-->
     <footer class="footer">
       <div class="footer-container-left">
@@ -545,7 +564,7 @@
       <address>
       
         <ul class="list-footer">
-          <li>
+          <li class="list-address-item">
             <a
               class="address"
               href="https://goo.gl/maps/8HYQDYo6hGALLFKf9"
@@ -554,12 +573,12 @@
               >г. Киев, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li>
+          <li class="list-address-item">
             <a class="contact-details-footer" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
-          <li>
+          <li class="list-address-item">
             <a class="contact-details-footer" href="tel:+380991111111"
               >+38 099 111 11 11</a
             >
@@ -627,5 +646,6 @@
         </div>
       
     </footer>
+    <!------------------------------------FOTER ENDS---------------------------------->
   </body>
 </html>
