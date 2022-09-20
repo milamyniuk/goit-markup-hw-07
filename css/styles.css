@@ -28,6 +28,7 @@ img {
   --main-text-color: #212121;
   --p-text-color: #757575;
   --elements-background: #eeeeee;
+  --svg-color: #afb1b8;
   --main-spacing: 0.03em;
 }
 .list {
@@ -101,6 +102,7 @@ body {
 .menu-link {
   display: flex;
   flex-direction: row;
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -115,7 +117,7 @@ body {
   position: absolute;
   margin-top: 44px;
   content: "";
-  width: 48px;
+  width: 100%;
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
@@ -128,14 +130,15 @@ body {
 
 .contacts {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-items: center;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   gap: 50px;
-  margin-left: 300px;
+  margin-left: auto;
 }
 .contact-details {
-  /* display: flex; */
+  display: flex;
+  align-items: center;
   /* flex-direction: row; */
   font-weight: 500;
   font-size: 14px;
@@ -150,6 +153,10 @@ body {
 .contact-details:focus {
   color: var(--primary-color);
 }
+.contact-details:hover svg,
+.contact-details:focus svg {
+  fill: var(--primary-color);
+}
 .main-nav {
   display: flex;
 
@@ -160,14 +167,16 @@ body {
 }
 /* icons header*/
 .icon-envelope {
-  fill: #757575;
+  fill: var(--p-text-color);
+  margin-right: 10px;
 }
 .icon-envelope:hover {
   cursor: pointer;
   fill: var(--primary-color);
 }
 .icon-smartphone {
-  fill: #757575;
+  fill: var(--p-text-color);
+  margin-right: 10px;
 }
 .icon-smartphone:hover {
   cursor: pointer;
@@ -373,18 +382,15 @@ body {
 .regular-clients {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 1170px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* width: 1170px; */
   /* margin: 94px 215px; */
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 215px;
+  /* padding-left: 215px; */
 }
 
-.extraSpace {
-  margin-top: 50px;
-}
 .clients-icons {
   display: flex;
   justify-content: center;
@@ -405,21 +411,21 @@ body {
   fill: var(--primary-color);
 }
 
-.clients-icons-link:hover {
-  border: var(--primary-color);
-  cursor: pointer;
-  border-style: ridge;
-}
-
 .clients-icon-clickable {
   width: 100%;
   height: 100%;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--svg-color);
   border-radius: 4px;
-  fill: #afb1b8;
+  fill: var(--svg-color);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.clients-icon-clickable:hover,
+.clients-icon-clickable:focus {
+  border-color: var(--primary-color);
+  cursor: pointer;
+  /* border-style: ridge; */
 }
 /* FOOTER */
 .footer {
@@ -604,6 +610,10 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.product-list-link {
+  display: block;
+}
+
 .product-list-wrapper {
   position: relative;
   overflow: hidden;
