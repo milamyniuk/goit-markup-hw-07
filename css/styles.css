@@ -89,7 +89,7 @@ body {
   display: flex;
   /* flex-direction: row; */
   gap: 50px;
-  margin-right: 0, auto;
+  margin-right: 0 auto;
 }
 
 .logo-footer .studio-footer {
@@ -673,7 +673,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }
 .do-list-wrapper {
   position: relative;
