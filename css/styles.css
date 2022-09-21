@@ -546,7 +546,67 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+.subscribe-container {
+  margin-left: 93px;
+}
+.subscribe-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  margin-bottom: 20px;
+}
+.email-form {
+  display: flex;
+  flex-direction: row;
+}
 
+.button-submit-container {
+  position: relative;
+  margin-left: 12px;
+}
+.subscribe-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--main-bg-color);
+  /* margin-left: 12px; */
+}
+
+.button-send-icon {
+  margin-left: 10px;
+}
+.email-form-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  color: var(--main-bg-color);
+}
+.email-form-input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
 /* Портфоліо сторінка*/
 .portfolio-main-section {
   padding-top: 94px;
@@ -632,9 +692,6 @@ body {
   color: var(--main-bg-color);
   background-color: hsla(235, 10%, 21%, 0.8);
 
-  /* bottom: 0;
-  left: 0; */
-  /* text-align: center; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -647,10 +704,6 @@ body {
   letter-spacing: 0.06em;
   color: var(--main-text-color);
   margin-bottom: 4px;
-
-  /* padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 20px; */
 }
 
 .list-projects .para {
@@ -661,16 +714,12 @@ body {
   letter-spacing: var(--main-spacing);
   color: var(--p-text-color);
   margin-bottom: 4px;
-  /* padding-left: 24px;
-  padding-right: 24px; */
 }
 
 .heading-under-picture {
   background-color: var(--main-bg-color);
-  /* margin: 1px; */
   padding: 22px 24px;
   border: 1px solid var(--elements-background);
-  /* height: 404px; */
 }
 .button {
   font-family: "Roboto", sans-serif;
@@ -774,6 +823,7 @@ body {
   position: relative;
   display: block;
 }
+
 .modal-form-input-icon {
   display: block;
   position: absolute;
@@ -799,10 +849,10 @@ body {
   border-color: var(--primary-color);
   outline: none;
 }
-.modal-form-message {
+/* .modal-form-message {
   display: block;
   margin-bottom: 4px;
-}
+} */
 .modal-form-message::placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -812,5 +862,60 @@ body {
   letter-spacing: 0.01em;
   color: var(--p-text-color);
 }
+.modal-form-check-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal-form-check {
+  position: absolute;
+  appearance: none;
+}
+.modal-form-own-checkbox {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 7px;
+}
+.modal-form-own-checkbox-icon {
+  display: none;
+  fill: var(--main-bg-color);
+}
+.modal-form-check:checked + .modal-form-own-checkbox {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.modal-form-check:checked
+  + .modal-form-own-checkbox
+  .modal-form-own-checkbox-icon {
+  display: block;
+}
+.modal-form-check:focus + .modal-form-own-checkbox {
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
 .modal-form-submit {
+  min-width: 160px;
+  min-height: 40px;
+  align-self: center;
+  padding: 6px 16px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--main-bg-color);
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  background-color: #188ce8;
+  color: #ffffff;
 }
