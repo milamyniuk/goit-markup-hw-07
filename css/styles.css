@@ -89,7 +89,7 @@ body {
   display: flex;
   /* flex-direction: row; */
   gap: 50px;
-  margin-right: 0 auto;
+  margin-right: auto;
 }
 
 .logo-footer .studio-footer {
