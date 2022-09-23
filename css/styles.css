@@ -676,8 +676,8 @@ body {
 .product-list-link:hover .overlay,
 .product-list-link:focus .overlay {
   transform: translateY(0%);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform var(--transition-dur-and-func);
+  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-dur-and-func); */
 }
 .overlay {
   position: absolute;
@@ -689,7 +689,7 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   overflow: auto;
   transform: translateY(100%);
-  /* transition: transform var(--transition-dur-and-func); */
+  transition: transform var(--transition-dur-and-func);
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.5;
