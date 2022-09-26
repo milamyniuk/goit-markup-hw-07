@@ -587,13 +587,17 @@ body {
 
 .button-submit-container {
   position: relative;
-  margin-left: 12px;
+  margin-left: auto;
 }
 .subscribe-button {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-right: 10px;
+  padding-left: 28px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   background-color: var(--primary-color);
   width: 200px;
   height: 50px;
@@ -604,7 +608,7 @@ body {
   font-size: 16px;
   line-height: 30px;
   color: var(--main-bg-color);
-  /* margin-left: 12px; */
+  margin-left: 12px;
 }
 
 .button-send-icon {
@@ -773,7 +777,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 580px;
+  height: 601px;
   padding: 40px;
   background-color: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -890,6 +894,14 @@ body {
 .modal-form-check-field {
   display: flex;
   align-items: center;
+  color: var(--p-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 .modal-form-check {
@@ -920,11 +932,16 @@ body {
 .modal-form-check:focus + .modal-form-own-checkbox {
   box-shadow: 0 0 0 2px var(--primary-color);
 }
+.link-user-consent {
+  color: var(--primary-color);
+}
 .modal-form-submit {
-  min-width: 160px;
-  min-height: 40px;
+  min-width: 200px;
+  min-height: 50px;
   align-self: center;
-  padding: 6px 16px;
+  padding: 10px 52px;
+
+  /* display: flex; */
   border: 1px solid var(--primary-color);
   border-radius: 4px;
   background-color: var(--primary-color);
