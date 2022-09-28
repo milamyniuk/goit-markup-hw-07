@@ -1,0 +1,127 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--secondary-color);
+  align-content: flex-start;
+  justify-content: flex-start;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-container-left {
+  display: flex;
+  flex-direction: column;
+}
+.address-footer-container {
+  margin-top: 20px;
+}
+.footer-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 70px;
+}
+.footer-icons-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: var(--main-spacing);
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  margin-bottom: 20px;
+}
+.social-list-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-dur-and-func);
+}
+.social-list-icon-footer {
+  fill: var(--main-bg-color);
+}
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+.social-list-link-footer:hover .social-list-icon {
+  fill: var(--main-bg-color);
+}
+
+.subscribe-container {
+  margin-left: 93px;
+}
+.subscribe-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  margin-bottom: 20px;
+}
+.email-form {
+  display: flex;
+  flex-direction: row;
+}
+.email-form-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  color: var(--main-bg-color);
+}
+.email-form-input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.button-submit-container {
+  position: relative;
+  margin-left: auto;
+}
+.subscribe-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  padding-left: 28px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: var(--primary-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--main-bg-color);
+  margin-left: 12px;
+}
+
+.button-send-icon {
+  margin-left: 10px;
+}

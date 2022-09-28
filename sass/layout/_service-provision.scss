@@ -1,0 +1,23 @@
+.what-we-do {
+  padding-bottom: 94px;
+}
+.do-list-wrapper {
+  position: relative;
+}
+.do-overlay {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  width: 370px;
+  height: 70px;
+  color: var(--main-bg-color);
+  background-color: hsla(235, 10%, 21%, 0.8);
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

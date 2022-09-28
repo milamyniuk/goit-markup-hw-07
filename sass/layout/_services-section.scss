@@ -1,0 +1,33 @@
+.section-services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.heads {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: var(--main-spacing);
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+.heads-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: var(--main-spacing);
+  color: var(--p-text-color);
+}
+.image-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  gap: 30px;
+
+  background-color: var(--main-second-bg-color);
+}

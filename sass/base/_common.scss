@@ -1,0 +1,35 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+button {
+  border: none;
+}
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-bg-color);
+}
+.list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  justify-content: center;
+}

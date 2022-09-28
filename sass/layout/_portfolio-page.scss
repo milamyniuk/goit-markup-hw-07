@@ -1,0 +1,102 @@
+.portfolio-main-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.list-buttons {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  background: var(--main-second-bg-color);
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-dur-and-func);
+}
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--main-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.list-projects {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.list-projects li {
+  display: flex;
+  flex-direction: column;
+}
+.list-projects li:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.product-list-link {
+  display: block;
+}
+
+.product-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.product-list-link:hover .overlay,
+.product-list-link:focus .overlay {
+  transform: translateY(0%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform var(--transition-dur-and-func);
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.list-projects h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+  margin-bottom: 4px;
+}
+
+.list-projects .para {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: var(--main-spacing);
+  color: var(--p-text-color);
+  margin-bottom: 4px;
+}
+
+.heading-under-picture {
+  background-color: var(--main-bg-color);
+  padding: 22px 24px;
+  border: 1px solid var(--elements-background);
+}

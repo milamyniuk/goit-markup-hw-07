@@ -1,0 +1,13 @@
+:root {
+  --main-bg-color: #ffffff;
+  --main-second-bg-color: #f5f4fa;
+  --primary-color: #2196f3;
+  --secondary-color: #2f303a;
+  --logo-color: #000000;
+  --main-text-color: #212121;
+  --p-text-color: #757575;
+  --elements-background: #eeeeee;
+  --svg-color: #afb1b8;
+  --main-spacing: 0.03em;
+  --transition-dur-and-func: 250ms linear;
+}/*# sourceMappingURL=variables.css.map */

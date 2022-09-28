@@ -1,0 +1,47 @@
+.contacts {
+  display: flex;
+
+  align-items: center;
+
+  gap: 50px;
+  margin-left: auto;
+}
+.contact-details {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--p-text-color);
+  padding-top: 32px;
+
+  padding-bottom: 32px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func);
+}
+.contact-details:hover,
+.contact-details:focus {
+  color: var(--primary-color);
+}
+.contact-details:hover svg,
+.contact-details:focus svg {
+  fill: var(--primary-color);
+}
+.icon-envelope {
+  fill: var(--p-text-color);
+  margin-right: 10px;
+}
+.icon-envelope:hover {
+  cursor: pointer;
+  fill: var(--primary-color);
+}
+.icon-smartphone {
+  fill: var(--p-text-color);
+  margin-right: 10px;
+}
+.icon-smartphone:hover {
+  cursor: pointer;
+  fill: var(--primary-color);
+}
