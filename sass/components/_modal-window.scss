@@ -25,8 +25,9 @@
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.modal-close-btn:hover {
-  fill: var(--primary-color);
-  cursor: pointer;
+
+  &:hover {
+    fill: var(--primary-color);
+    cursor: pointer;
+  }
 }

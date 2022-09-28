@@ -24,12 +24,14 @@
   align-items: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color var(--transition-dur-and-func);
-}
-.clients-icon-clickable:hover,
-.clients-icon-clickable:focus {
-  border-color: var(--primary-color);
-}
-.clients-icon-clickable:hover svg,
-.clients-icon-clickable:focus svg {
-  fill: var(--primary-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--primary-color);
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: var(--primary-color);
+  }
 }

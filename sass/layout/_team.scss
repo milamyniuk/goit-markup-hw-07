@@ -46,22 +46,24 @@
   fill: #afb1b8;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color var(--transition-dur-and-func);
-}
 
-.social-list-link:hover {
-  cursor: pointer;
-  background-color: var(--primary-color);
-  fill: #afb1b8;
+  &:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    fill: #afb1b8;
+  }
+
+  &:focus {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    fill: #afb1b8;
+  }
 }
 
 .social-list-link:hover .social-list-icon {
   fill: #ffffff;
 }
-.social-list-link:focus {
-  cursor: pointer;
-  background-color: var(--primary-color);
-  fill: #afb1b8;
-}
+
 .social-list-link:focus .social-list-icon {
   fill: #ffffff;
 }

@@ -29,12 +29,14 @@
   color: var(--main-text-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus,
+  .active {
+    color: var(--primary-color);
+  }
 }
-.menu-link:hover,
-.menu-link:focus,
-.active {
-  color: var(--primary-color);
-}
+
 .line:hover::after,
 .active::after {
   display: flex;
