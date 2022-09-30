@@ -11,14 +11,14 @@
   color: var(--main-text-color);
   margin-bottom: 10px;
 }
-.heads-description {
+.heads__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: var(--main-spacing);
   color: var(--p-text-color);
 }
-.image-container {
+.list__image-container {
   display: flex;
 
   justify-content: center;

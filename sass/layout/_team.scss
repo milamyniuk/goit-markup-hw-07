@@ -16,7 +16,7 @@
   padding: 30px;
   border-radius: 0px 0px 4px 4px;
 }
-.names {
+.team-description__names {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -35,7 +35,7 @@
   gap: 30px;
 }
 
-.social-list-link {
+.social-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,14 +60,14 @@
   }
 }
 
-.social-list-link:hover .social-list-icon {
+.social-list__link:hover .social-list__icon {
   fill: #ffffff;
 }
 
-.social-list-link:focus .social-list-icon {
+.social-list__link:focus .social-list__icon {
   fill: #ffffff;
 }
-.position {
+.team-description__position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -77,6 +77,6 @@
   margin-bottom: 16px;
 }
 
-.social-list-icon:hover {
+.social-list__icon:hover {
   fill: var(--primary-color);
 }

@@ -32,7 +32,7 @@
   }
 }
 
-.list-projects {
+.list-products {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -50,20 +50,20 @@
   }
 }
 
-.product-list-link {
+.list-products__link {
   display: block;
 
-  &:hover .overlay,
-  &:focus .overlay {
+  &:hover .list-products__overlay,
+  &:focus .list-products__overlay {
     transform: translateY(0%);
   }
 }
 
-.product-list-wrapper {
+.list-products__wrapper {
   position: relative;
   overflow: hidden;
 }
-.overlay {
+.list-products__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -80,7 +80,7 @@
   font-weight: 400;
   letter-spacing: 0.03em;
 }
-.list-projects h2 {
+.list-products h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -90,7 +90,7 @@
   margin-bottom: 4px;
 }
 
-.list-projects .para {
+.list-products .list-products__para {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -100,7 +100,7 @@
   margin-bottom: 4px;
 }
 
-.heading-under-picture {
+.list-products__heading-under-picture {
   background-color: var(--main-bg-color);
   padding: 22px 24px;
   border: 1px solid var(--elements-background);

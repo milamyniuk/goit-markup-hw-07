@@ -12,7 +12,7 @@
   display: flex;
   align-items: baseline;
 }
-.footer-container-left {
+.footer-container__left {
   display: flex;
   flex-direction: column;
 }
@@ -56,7 +56,7 @@
   }
 }
 
-.social-list-icon-footer {
+.social-list__icon-footer {
   fill: var(--main-bg-color);
 }
 
@@ -78,7 +78,7 @@
   display: flex;
   flex-direction: row;
 }
-.email-form-input {
+.email-form__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
